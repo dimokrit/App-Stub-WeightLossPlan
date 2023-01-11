@@ -1,23 +1,3 @@
-/*
- * Copyright (C) 2012 GREE, Inc.
- * 
- * This software is provided 'as-is', without any express or implied
- * warranty.  In no event will the authors be held liable for any damages
- * arising from the use of this software.
- * 
- * Permission is granted to anyone to use this software for any purpose,
- * including commercial applications, and to alter it and redistribute it
- * freely, subject to the following restrictions:
- * 
- * 1. The origin of this software must not be misrepresented; you must not
- *    claim that you wrote the original software. If you use this software
- *    in a product, an acknowledgment in the product documentation would be
- *    appreciated but is not required.
- * 2. Altered source versions must be plainly marked as such, and must not be
- *    misrepresented as being the original software.
- * 3. This notice may not be removed or altered from any source distribution.
- */
-
 using System.Collections;
 using UnityEngine;
 #if UNITY_2018_4_OR_NEWER
@@ -33,6 +13,7 @@ public class SampleWebView : MonoBehaviour
 
     IEnumerator Start()
     {
+      Url = GameManager.link;
         webViewObject = (new GameObject("WebViewObject")).AddComponent<WebViewObject>();
         webViewObject.Init(
             cb: (msg) =>
@@ -63,6 +44,7 @@ public class SampleWebView : MonoBehaviour
             },
             ld: (msg) =>
             {
+              
                 Debug.Log(string.Format("CallOnLoaded[{0}]", msg));
 #if UNITY_EDITOR_OSX || (!UNITY_ANDROID && !UNITY_WEBPLAYER && !UNITY_WEBGL)
                 // NOTE: depending on the situation, you might prefer
@@ -149,7 +131,7 @@ public class SampleWebView : MonoBehaviour
 
         //webViewObject.SetScrollbarsVisibility(true);
 
-        webViewObject.SetMargins(5, 100, 5, 15);
+        webViewObject.SetMargins(5, 100, 0, 0);
         webViewObject.SetTextZoom(100);  // android only. cf. https://stackoverflow.com/questions/21647641/android-webview-set-font-size-system-default/47017410#47017410
         webViewObject.SetVisibility(true);
 
@@ -200,58 +182,22 @@ public class SampleWebView : MonoBehaviour
 
     void OnGUI()
     {
-        var x = 10;
+        var x = 50;
 
         GUI.enabled = webViewObject.CanGoBack();
-        if (GUI.Button(new Rect(x, 10, 80, 80), "<")) {
+        if (GUI.Button(new Rect(x, 20, 140, 80), "<--")) {
             webViewObject.GoBack();
         }
         GUI.enabled = true;
-        x += 90;
+        x += 160;
 
         GUI.enabled = webViewObject.CanGoForward();
-        if (GUI.Button(new Rect(x, 10, 80, 80), ">")) {
+        if (GUI.Button(new Rect(x, 20, 140, 80), "-->")) {
             webViewObject.GoForward();
         }
-        GUI.enabled = true;
-        x += 90;
+    }
 
-        if (GUI.Button(new Rect(x, 10, 80, 80), "r")) {
-            webViewObject.Reload();
-        }
-        x += 90;
-
-        GUI.TextField(new Rect(x, 10, 180, 80), "" + webViewObject.Progress());
-        x += 190;
-
-        if (GUI.Button(new Rect(x, 10, 80, 80), "*")) {
-            var g = GameObject.Find("WebViewObject");
-            if (g != null) {
-                Destroy(g);
-            } else {
-                StartCoroutine(Start());
-            }
-        }
-        x += 90;
-
-        if (GUI.Button(new Rect(x, 10, 80, 80), "c")) {
-            Debug.Log(webViewObject.GetCookies(Url));
-        }
-        x += 90;
-
-        if (GUI.Button(new Rect(x, 10, 80, 80), "x")) {
-            webViewObject.ClearCookies();
-        }
-        x += 90;
-
-        if (GUI.Button(new Rect(x, 10, 80, 80), "D")) {
-            webViewObject.SetInteractionEnabled(false);
-        }
-        x += 90;
-
-        if (GUI.Button(new Rect(x, 10, 80, 80), "E")) {
-            webViewObject.SetInteractionEnabled(true);
-        }
-        x += 90;
+    void Update() {
+      webViewObject.SaveCookies();
     }
 }

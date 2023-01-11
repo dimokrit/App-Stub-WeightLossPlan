@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Eating : MonoBehaviour
+public class EatingAndTraining : MonoBehaviour
 {
     public Text programText;
     public Dropdown daysDropdown;

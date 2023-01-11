@@ -7,6 +7,7 @@ using Firebase;
 
 public class StubMenu : MonoBehaviour
 {
+    public static int a;
     void start()
     {
        // FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task => {
