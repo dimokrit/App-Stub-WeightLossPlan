@@ -417,6 +417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   link: 
   error: {fileID: 154852130}
+  networkError: 0
 --- !u!114 &1328765749
 MonoBehaviour:
   m_ObjectHideFlags: 0

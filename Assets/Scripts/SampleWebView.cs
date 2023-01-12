@@ -180,24 +180,9 @@ public class SampleWebView : MonoBehaviour
         yield break;
     }
 
-    void OnGUI()
-    {
-        var x = 50;
-
-        GUI.enabled = webViewObject.CanGoBack();
-        if (GUI.Button(new Rect(x, 20, 140, 80), "<--")) {
-            webViewObject.GoBack();
-        }
-        GUI.enabled = true;
-        x += 160;
-
-        GUI.enabled = webViewObject.CanGoForward();
-        if (GUI.Button(new Rect(x, 20, 140, 80), "-->")) {
-            webViewObject.GoForward();
-        }
-    }
-
     void Update() {
       webViewObject.SaveCookies();
+      if (Input.GetKey(KeyCode.Escape))
+        webViewObject.GoBack();
     }
 }

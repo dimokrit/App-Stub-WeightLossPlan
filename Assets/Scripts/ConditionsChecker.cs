@@ -1,15 +1,18 @@
   using Firebase.Extensions;
   using System;
   using System.Threading.Tasks;
+  using System.Collections;
   using UnityEngine;
   using UnityEngine.SceneManagement;
   using UnityEngine.UI;
+  using UnityEngine.Networking;
  
 
   public class ConditionsChecker : MonoBehaviour {
     public string link;
     public GameObject error;
     private AndroidJavaObject javaClass;
+    public bool networkError;
     Firebase.DependencyStatus dependencyStatus = Firebase.DependencyStatus.UnavailableOther;
     protected bool isFirebaseInitialized = false;
 
@@ -17,10 +20,7 @@
       if (PlayerPrefs.HasKey("SavedString")) {
         link = PlayerPrefs.GetString("SavedString");
         GameManager.link = link;
-        if (Application.internetReachability == NetworkReachability.NotReachable)
-          error.SetActive(true);
-        else 
-          SceneManager.LoadScene("Scenes/WebViewScene");
+        StartCoroutine(testNet());
       } else {
         javaClass = new AndroidJavaObject("com.java.myapplication.cond");
         Boolean checkEmu = javaClass.Call<Boolean>("checkIsEmu");
@@ -40,7 +40,6 @@
         }
       }
     }
-
 
     void InitializeFirebase() {
         System.Collections.Generic.Dictionary<string, object> defaults = new System.Collections.Generic.Dictionary<string, object>();
@@ -100,10 +99,16 @@
         PlayerPrefs.SetString("SavedString", link);
         PlayerPrefs.Save();
         GameManager.link = link;
-        if (Application.internetReachability == NetworkReachability.NotReachable)
+        StartCoroutine(testNet());
+      }
+    }
+
+    IEnumerator testNet() {
+      UnityWebRequest request = UnityWebRequest.Get("https://www.google.ru/");
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError) 
           error.SetActive(true);
         else
           SceneManager.LoadScene("Scenes/WebViewScene");
-      }
     }
   }

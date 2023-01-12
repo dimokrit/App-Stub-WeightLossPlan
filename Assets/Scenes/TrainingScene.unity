@@ -308,7 +308,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0414\u0435\u043D\u044C 1"
+  m_Text: Day 1
 --- !u!114 &49228234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -730,7 +730,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u0430\u0437\u0430\u0434"
+  m_Text: Back
 --- !u!222 &804603614
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1374,65 +1374,65 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: "\u0414\u0435\u043D\u044C 1"
+    - m_Text: Day 1
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 2"
+    - m_Text: Day 2
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 3"
+    - m_Text: Day 3
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 4"
+    - m_Text: Day 4
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 5"
+    - m_Text: Day 5
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 6"
+    - m_Text: Day 6
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 7"
+    - m_Text: Day 7
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 8"
+    - m_Text: Day 8
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 9"
+    - m_Text: Day 9
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 10"
+    - m_Text: Day 10
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 11"
+    - m_Text: Day 11
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 12"
+    - m_Text: Day 12
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 13"
+    - m_Text: Day 13
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 14"
+    - m_Text: Day 14
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 15"
+    - m_Text: Day 15
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 16"
+    - m_Text: Day 16
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 17"
+    - m_Text: Day 17
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 18"
+    - m_Text: Day 18
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 19"
+    - m_Text: Day 19
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 20"
+    - m_Text: Day 20
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 21"
+    - m_Text: Day 21
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 22"
+    - m_Text: Day 22
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 23"
+    - m_Text: Day 23
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 24"
+    - m_Text: Day 24
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 25"
+    - m_Text: Day 25
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 26"
+    - m_Text: Day 26
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 27"
+    - m_Text: Day 27
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 28"
+    - m_Text: Day 28
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 29"
+    - m_Text: Day 29
       m_Image: {fileID: 0}
-    - m_Text: "\u0414\u0435\u043D\u044C 30"
+    - m_Text: Day 30
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1912,15 +1912,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0414\u0435\u043D\u044C 1\r\n\r\n\u041F\u0440\u0438\u0441\u0435\u0434\u0430\u043D\u0438\u044F
-    \u2013 1 \u043C\u0438\u043D\u0443\u0442\u0430.\r\n\n\u0414\u0436\u0430\u043C\u043F\u0438\u043D
-    \u0414\u0436\u0435\u043A \u2013 1 \u043C\u0438\u043D\u0443\u0442\u0430.\r\n\n\u0412\u044B\u043F\u0430\u0434\u044B
-    \u0432\u043F\u0435\u0440\u0435\u0434 \u043F\u043E\u043E\u0447\u0435\u0440\u0435\u0434\u043D\u043E
-    \u2013 1 \u043C\u0438\u043D\u0443\u0442\u0430.\r\n\n\u0414\u0436\u0430\u043C\u043F\u0438\u043D
-    \u0414\u0436\u0435\u043A \u2013 1 \u043C\u0438\u043D\u0443\u0442\u0430.\r\n\n\u041E\u0442\u0436\u0438\u043C\u0430\u043D\u0438\u044F
-    \u2013 1 \u043C\u0438\u043D\u0443\u0442\u0430.\r\n\n\u0414\u0436\u0430\u043C\u043F\u0438\u043D
-    \u0414\u0436\u0435\u043A \u2013 1 \u043C\u0438\u043D\u0443\u0442\u0430.\r\n\n\u041F\u0440\u044F\u043C\u044B\u0435
-    \u0441\u043A\u0440\u0443\u0447\u0438\u0432\u0430\u043D\u0438\u044F \u2013 1 \u043C\u0438\u043D\u0443\u0442\u0430.\r\n\n\u0414\u0436\u0430\u043C\u043F\u0438\u043D
-    \u0414\u0436\u0435\u043A \u2013 1 \u043C\u0438\u043D\u0443\u0442\u0430.\n\n\u041E\u0422\u0414\u042B\u0425
-    \u041C\u0415\u0416\u0414\u0423 \u0423\u041F\u0420\u041E\u0416\u041D\u0415\u041D\u0418\u042F\u041C\u0418
-    1-2 \u041C\u0418\u041D\u0423\u0422\u042B"
+  m_Text: "Day 1\r\n\r\nSquats \u2013 1 minute.\r\n\r\nJumpin' Jack \u2013 1 minute.\r\n\r\nLunges
+    forward alternately \u2013 1 minute.\r\n\r\nJumpin' Jack \u2013 1 minute.\r\n\r\nPush\u2013ups
+    - 1 minute.\r\n\r\nJumpin' Jack \u2013 1 minute.\r\n\r\nStraight twists \u2013
+    1 minute.\r\n\r\nJumpin' Jack \u2013 1 minute.\r\n\r\nREST BETWEEN EXERCISES
+    1-2 MINUTES"
