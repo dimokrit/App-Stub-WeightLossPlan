@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
-  <string name="gcm_defaultSenderId" translatable="false">288251041335</string>
-  <string name="google_storage_bucket" translatable="false">webviewtestapp-c2d06.appspot.com</string>
-  <string name="project_id" translatable="false">webviewtestapp-c2d06</string>
-  <string name="google_api_key" translatable="false">AIzaSyAwDpjSqeSt-gjOPAtuDtGrtHv4T6JZUf8</string>
-  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAwDpjSqeSt-gjOPAtuDtGrtHv4T6JZUf8</string>
-  <string name="google_app_id" translatable="false">1:288251041335:android:e47a59794f2024f5ded1b2</string>
-  <string name="default_web_client_id" translatable="false">288251041335-66atqg2kpq9p6f553r5v7lvk2im4cjjq.apps.googleusercontent.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">424920900681</string>
+  <string name="google_storage_bucket" translatable="false">fedvwi.appspot.com</string>
+  <string name="project_id" translatable="false">fedvwi</string>
+  <string name="google_api_key" translatable="false">AIzaSyCgDP_98jdebNECI-YWU5vTR9P6Zbl6NtE</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCgDP_98jdebNECI-YWU5vTR9P6Zbl6NtE</string>
+  <string name="google_app_id" translatable="false">1:424920900681:android:f2c66bfd728fdda84b8b98</string>
+  <string name="default_web_client_id" translatable="false">424920900681-0538cdrf53p7conh8ssha73p5o47r8nd.apps.googleusercontent.com</string>
 </resources>

@@ -91,7 +91,7 @@
     }
 
     public void Show() {
-      link = Firebase.RemoteConfig.FirebaseRemoteConfig.DefaultInstance.GetValue("link").StringValue;
+      link = Firebase.RemoteConfig.FirebaseRemoteConfig.DefaultInstance.GetValue("url").StringValue;
       Debug.Log(link);
       if (link == "")
         SceneManager.LoadScene("Scenes/StubScene");

@@ -1,41 +1,34 @@
 {
   "project_info": {
-    "project_number": "288251041335",
-    "project_id": "webviewtestapp-c2d06",
-    "storage_bucket": "webviewtestapp-c2d06.appspot.com"
+    "project_number": "424920900681",
+    "project_id": "fedvwi",
+    "storage_bucket": "fedvwi.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:288251041335:android:e47a59794f2024f5ded1b2",
+        "mobilesdk_app_id": "1:424920900681:android:f2c66bfd728fdda84b8b98",
         "android_client_info": {
-          "package_name": "com.myCompany.webView.testApp"
+          "package_name": "winline.estoper"
         }
       },
       "oauth_client": [
         {
-          "client_id": "288251041335-66atqg2kpq9p6f553r5v7lvk2im4cjjq.apps.googleusercontent.com",
+          "client_id": "424920900681-0538cdrf53p7conh8ssha73p5o47r8nd.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAwDpjSqeSt-gjOPAtuDtGrtHv4T6JZUf8"
+          "current_key": "AIzaSyCgDP_98jdebNECI-YWU5vTR9P6Zbl6NtE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "288251041335-66atqg2kpq9p6f553r5v7lvk2im4cjjq.apps.googleusercontent.com",
+              "client_id": "424920900681-0538cdrf53p7conh8ssha73p5o47r8nd.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "288251041335-r5qbpqnp5sriipap8r8lg1oqf026kvbm.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.myCompany.webView.testApp"
-              }
             }
           ]
         }
