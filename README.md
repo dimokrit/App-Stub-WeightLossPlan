@@ -4,7 +4,12 @@
 </p>
 
 ## About
-Приложение-заглушка с планом похудения на 30 дней
+Stub application
+
+The application checks several conditions before launching.
+
+
+
 ## Developers
 
 - [dimokrit](https://github.com/dimokrit)
